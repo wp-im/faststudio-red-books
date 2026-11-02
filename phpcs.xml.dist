@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ruleset name="FastStudio Red Books WordPress">
+	<description>WordPress standards; preserve required post type and taxonomy template filenames.</description>
+	<rule ref="WordPress" />
+	<rule ref="WordPress.Files.FileName.NotHyphenatedLowercase">
+		<exclude-pattern>*/single-bp_book.php</exclude-pattern>
+		<exclude-pattern>*/archive-bp_book.php</exclude-pattern>
+		<exclude-pattern>*/taxonomy-bp_author.php</exclude-pattern>
+		<exclude-pattern>*/taxonomy-bp_series.php</exclude-pattern>
+		<exclude-pattern>*/taxonomy-bp_subject.php</exclude-pattern>
+	</rule>
+</ruleset>
